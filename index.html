@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Local Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="chat-header">
+            <div class="header-info">
+                <h1>Public Channel</h1>
+                <span class="status-dot"></span>
+                <span class="online-count" id="status-text">Live (Local)</span>
+            </div>
+            <div class="user-profile">
+                <div class="avatar" id="my-avatar"></div>
+                <span id="my-username">Guest</span>
+            </div>
+        </header>
+
+        <main class="chat-area" id="chat-area">
+            <div class="system-message">
+                Welcome to the chat! Open this page in another tab to talk to yourself.
+            </div>
+            <!-- Messages will appear here -->
+        </main>
+
+        <footer class="input-area">
+            <form id="chat-form" autocomplete="off">
+                <input type="text" id="message-input" placeholder="Type a message..." required>
+                <button type="submit" id="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
+
